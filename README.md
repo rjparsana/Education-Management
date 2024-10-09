@@ -24,19 +24,19 @@ nodemon server.js
 
 ## API Endpoints
 
-# Authentication
+### Authentication
 POST /api/auth/register: Register a new user (Admin, Teacher, or Student)
 POST /api/auth/login: Login and receive a JWT
 
-# Course Management
+### Course Management
 POST /api/courses: Create a new course (Admin only)
 PUT /api/courses/:courseId/content: Update course content (Teacher only)
 DELETE /api/courses/:courseId: Delete a course (Admin only)
 
-# Enrollment Management
+### Enrollment Management
 POST /api/enroll: Enroll a student in a course (Admin)
 POST /api/enroll/self: Student self-enroll in a course
 
-#Grade Management
+### Grade Management
 POST /api/grades: Assign grades to students (Teacher only)
 GET /api/grades/:studentId: View grades for a student (Student only)
